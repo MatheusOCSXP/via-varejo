@@ -1,0 +1,154 @@
+/* Importação da Fonte Lato*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Estilos padrão */
+
+:root {
+  --viaroxo: #5a6bff;
+  --viaazul: #17117a;
+  --viaverde: #00d3c3;
+  --viacinza: #73767a;
+}
+
+body {
+  font-family: "Lato";
+  color: #fff;
+  margin: 0px;
+  background-image: linear-gradient(to right, var(--viaroxo), var(--viaverde));
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+header {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: var(--viacinza);
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  height: 8px;
+  background: #000;
+}
+
+/* Estilos personalizados */
+
+.header__businessname {
+  display: flex;
+  gap: 20px;
+  grid-column: 1;
+  align-content: center;
+}
+
+.header__navbar {
+  grid-column: 3;
+}
+
+.header__navbar_menu {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--viaroxo);
+  align-content: center;
+}
+
+.header__navbar_menu a {
+  color: #fff;
+  display: flex;
+}
+
+#header__navbar_menu--line {
+  max-height: 100%;
+  width: 2px;
+  background: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  gap: 40px;
+}
+
+.container__newtrans {
+  display: grid;
+  align-items: center;
+  color: #000;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.container__newtrans_formtrans {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container__newtrans_formtrans
+  input:not(.container__newtrans_formtrans--btnsub),
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 0.1px solid #000;
+}
+
+.container__newtrans_formtrans--btnsub {
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--viaroxo);
+  color: #fff;
+  font-size: 14px;
+  border: none;
+}
+
+.container__exttrans {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.container__exttrans_exttable {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__img--accessibility {
+  position: fixed;
+  bottom: 300px;
+  right: 1px;
+}

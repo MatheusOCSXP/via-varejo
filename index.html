@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controle Financeiro - Via Varejo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-  
+
+  <header>
+
+    <div class="header__businessname">
+      <img src="./assets/img/logo_viavarejo.svg" alt="">
+      <h1>Controle Financeiro</h1>
+    </div>
+
+    <nav class="header__navbar">
+      <ul class="header__navbar_menu">
+        <li>
+          <a href="#">Cadastro de Transações</a>
+        </li>
+        <span id="header__navbar_menu--line"></span>
+        <li>
+          <a href="#">Limpar Dados</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="container">
+
+    <section class="container__newtrans">
+      <h2>Nova Transação</h2>
+      <form action="#" class="container__newtrans_formtrans">
+
+        <label for="transtype">Tipo de transação</label>
+        <select name="transtype">
+          <option value="buy">Compra</option>
+          <option value="sell">Venda</option>
+        </select>
+
+        <label for="itemname">Nome da mercadoria</label>
+        <input type="text" name="itemname" placeholder="Digite o nome do item">
+
+        <label for="itemprice">Valor</label>
+        <input type="number" name="itemprice" placeholder="R$ 0,00">
+
+        <input type="submit" class="container__newtrans_formtrans--btnsub" value="Adicionar transação">
+
+      </form>
+    </section>
+
+
+    <section class="container__exttrans">
+
+      <h2>Extrato de Transações</h2>
+
+      <table class="container__exttrans_exttable">
+        <thead>
+          <tr>
+            <td>
+              <!-- Positivo ou negativo -->
+            </td>
+            <td>
+              Mercadoria
+            </td>
+            <td>
+              <!-- Vazio -->
+            </td>
+            <td>
+              Valor
+            </td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              X
+              <!-- Positivo ou negativo -->
+            </td>
+            <td>
+              Nenhuma transação cadastrada.
+            </td>
+            <td>
+              <!-- Vazio -->
+            </td>
+            <td>
+              R$ 0,00
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>
+              <!-- Positivo ou negativo (vazio) -->
+            </td>
+            <td>
+              Total
+            </td>
+            <td>
+              <!-- Vazio -->
+            </td>
+            <td>
+              R$ 0,00
+              [Resultado]
+            </td>
+          </tr>
+        </tfoot>
+
+      </table>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <img class="footer__img--accessibility" src="./assets/img/acessibilidade.png" alt="">
+
+  </footer>
 </body>
+
 </html>

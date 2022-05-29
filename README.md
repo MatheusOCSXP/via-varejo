@@ -6,7 +6,7 @@ Este teste busca avaliar quesitos técnicos para as pessoas que se candidatem à
 
 O objetivo é criar uma SPA (Single Page Application) seguindo [este layout](https://goo.gl/yMrCaf).
 
-## O a aplicação deverá fazer:
+## O que a aplicação deverá fazer:
 
 - Incluir transações de compra ou venda de mercadoria.
 - Criar um extrato das transações incluídas. As transações deverão ser mostradas na ordem em que foram incluídas.
